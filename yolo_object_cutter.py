@@ -37,8 +37,6 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 NO_PILLOW = False
 try:
     from PIL import Image, ImageOps
-
-    raise ModuleNotFoundError()
 except ModuleNotFoundError:
     NO_PILLOW = True
     import cv2
